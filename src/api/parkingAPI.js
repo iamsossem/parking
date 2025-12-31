@@ -73,7 +73,7 @@ export const registerCar = async (item) => {
     .from('registered')
     .select('*')
     .eq('car_num',item.carNum)
-    .maybeSingle();
+    .single();
   if( existing ) throw new Error('이미 등록된 차량입니다');
   //2. 1일권, 1달권 endData 처리
   const stateDate = new Date();
