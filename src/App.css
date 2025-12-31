@@ -1,0 +1,33 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+/* parking-grid */
+.parking-grid{
+  display: grid;
+  grid-template-columns: repeat(5,100px);
+  justify-content: center;
+  gap: 1rem;
+
+  .spot-card{
+    border: 1px solid #222;
+    padding: 10px;
+    border-radius: 0.5rem;
+  }
+  .spot-card.resident{
+    background-color: green;
+  }
+  .spot-card.public{
+    background-color: dodgerblue;
+  }
+  .spot-card.carnum{
+    background-color: gray;
+  }
+}
+
+.controller{
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #222;
+  border-radius: 1rem;
+  background-color: #eee;
+}
